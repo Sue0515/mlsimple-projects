@@ -7,7 +7,7 @@ import tensorflow as tf
 np.random.seed(3)
 tf.random.set_seed(3)
 
-dataset = np.loadtxt("../datasets/ThoraricSurgery.csv", delimeter=",")
+dataset = np.loadtxt(".\datasets\ThoraricSurgery.csv", delimiter=",")
 X = dataset[:,0:17]
 Y = dataset[:,17]
 
