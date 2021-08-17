@@ -16,4 +16,6 @@ model.add(Dense(30, input_dim=17, activation='relu'))
 model.add(Dense(1, activation='sigmoid'))
 
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+#model.compile(loss='mean_squared_error', optimizer='adam', metrics=['accuracy'])
+
 model.fit(X, Y, epochs=100, batch_size=10)
